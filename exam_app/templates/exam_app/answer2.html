@@ -7,11 +7,23 @@
 
 {% block content %}
       <div class="row">
+
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
 
         {{object.question}}
          <hr>
             {{object.answer}} ----> {{object.answer.is_correct}}
+            <hr>
+            {{object.question.explanation}}
+            <hr>
+
+             <a href="{% url 'civics:test2' pk=next_pk %}">
+            <button type="submit" class="btn btn-primary">Next question</button>
+                 </a>
+
+
+
+
 
 
 

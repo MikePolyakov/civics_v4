@@ -58,5 +58,35 @@ class Answer(DetailView):
     model = Exam
     template_name = 'exam_app/answer2.html'
 
+    def get(self, request, *args, **kwargs):
+        """
+        Метод обработки get запроса
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
+        self.id = kwargs['pk']
+        return super().get(request, *args, **kwargs)
+
+    def get_object(self, queryset=None):
+        """
+        Получение этого объекта
+        :param queryset:
+        :return:
+        """
+        return get_object_or_404(Exam, pk=self.id)
+
+    def get_context_data(self, *args, **kwargs):
+        """
+        Отвечает за передачу параметров в контекст
+        :param args:
+        :param kwargs:
+        :return:
+        """
+        context = super().get_context_data(*args, **kwargs)
+        context['next_pk'] = self.id + 1
+        return context
+
 
 

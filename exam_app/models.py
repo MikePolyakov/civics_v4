@@ -33,7 +33,7 @@ class Attempt(models.Model):
         if not Exam.objects.filter(attempt=self).exists():
             questions = Question.objects.all()
 
-            for i in range(2):
+            for i in range(20):
                 random_question = random.choice(questions)
                 blank_answer = Answer.objects.filter(answer_name='wrong answer').first()
                 Exam.objects.create(attempt=self,
