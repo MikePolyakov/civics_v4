@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}
+  civics2021
+{% endblock %}
+
+
+{% block content %}
+      <div class="row">
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <!--        <form method="GET">-->
+<!--            &lt;!&ndash;        <form action='create_attempt' method="GET">&ndash;&gt;-->
+<!--            &lt;!&ndash;        <form action="{% url 'civics:start' %}" method="GET">&ndash;&gt;-->
+<!--            &lt;!&ndash;            <a href="{% url 'civics:start' %}">&ndash;&gt;-->
+<!--            <button type="submit" class="btn btn-primary">Start test</button>-->
+<!--            &lt;!&ndash;            </a>&ndash;&gt;-->
+<!--        </form>-->
+<!--          <form method="post">-->
+<!--            {% csrf_token %}-->
+            <button type="submit" class="btn btn-primary">Start test</button>
+<!--          </form>-->
+<!--            <div class="row">-->
+<!--                 <a href="{% url 'civics:test' %}">-->
+<!--                   <button class="btn btn-block btn-lg btn-primary">Start test</button>-->
+<!--                 </a>-->
+<!--            </div>-->
+        </div>
+      </div>
+{% endblock %}
