@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+test
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        {% for item in object_list %}
+        {{item.question}}
+         <hr>
+        <a href="{% url 'civics:question' pk=item.pk %}">
+            <button type="submit" class="btn btn-primary">Choose answer</button>
+        </a>
+        <hr>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock %}

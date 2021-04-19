@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+  create_attempt
+{% endblock %}
+
+
+{% block content %}
+      <div class="row">
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            attempt_id = {{exam.attempt.id}}
+            <br>
+            {{exam.question}}' '{{exam.question.id}}
+            <hr>
+            {{exam}} right answer = {{count}}
+
+<!--            <form method="post" enctype="multipart/form-data">-->
+<!--            {% csrf_token %}-->
+<!--            {{ form.as_p }}-->
+<!--            <button type="submit" class="btn btn-primary">Next</button>-->
+<!--            </form>-->
+
+        </div>
+      </div>
+{% endblock %}

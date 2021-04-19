@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+question
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        {{object.question}}
+         <hr>
+        {% for answer in object.question.question_answers.all %}
+            {{ answer.answer_name }}
+        <hr>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock %}

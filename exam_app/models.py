@@ -1,4 +1,5 @@
 from django.db import models
+import random
 
 
 # Create your models here.
@@ -24,6 +25,20 @@ class Attempt(models.Model):
     min_to_pass = models.PositiveIntegerField(default=18)
     # result maybe 0
     result = models.IntegerField(default=0)
+
+    # Переопределение метода save
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+
+        if not Exam.objects.filter(attempt=self).exists():
+            questions = Question.objects.all()
+
+            for i in range(20):
+                random_question = random.choice(questions)
+                blank_answer = Answer.objects.filter(answer_name='wrong answer').first()
+                Exam.objects.create(attempt=self,
+                                    question=random_question,
+                                    answer=blank_answer)
 
 
 class SubjectPart(models.Model):
@@ -55,7 +70,7 @@ class Question(models.Model):
 
 class Answer(models.Model):
     answer_name = models.CharField(max_length=100, blank=True)
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='question_answers')
     is_correct = models.BooleanField(default=True)
 
     def __str__(self):

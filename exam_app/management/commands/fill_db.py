@@ -21,6 +21,18 @@ class Command(BaseCommand):
                                            chapter=chapter_a)
         answer = Answer.objects.create(answer_name='the Constitution',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What does the Constitution do?',
                                            subject=subject,
@@ -32,6 +44,12 @@ class Command(BaseCommand):
                                        question=question)
         answer = Answer.objects.create(answer_name='protects basic rights of Americans',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='The idea of self-government is in the first three words of '
                                                          'the Constitution. What are these words?',
@@ -40,6 +58,18 @@ class Command(BaseCommand):
                                            chapter=chapter_a)
         answer = Answer.objects.create(answer_name='We the People',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What is an amendment?',
                                            subject=subject,
@@ -49,13 +79,35 @@ class Command(BaseCommand):
                                        question=question)
         answer = Answer.objects.create(answer_name='an addition (to the Constitution)',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
-        question = Question.objects.create(question_name='What do we call the first ten amendments to the Constitution?',
-                                           subject=subject,
-                                           part=part_1,
-                                           chapter=chapter_a)
+        question = Question.objects.create(
+            question_name='What do we call the first ten amendments to the Constitution?',
+            subject=subject,
+            part=part_1,
+            chapter=chapter_a)
         answer = Answer.objects.create(answer_name='the Bill of Rights',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What is one right or freedom from the First Amendment?*',
                                            subject=subject,
@@ -78,6 +130,18 @@ class Command(BaseCommand):
                                            chapter=chapter_a)
         answer = Answer.objects.create(answer_name='twenty-seven (27)',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What did the Declaration of Independence do?',
                                            subject=subject,
@@ -89,6 +153,12 @@ class Command(BaseCommand):
                                        question=question)
         answer = Answer.objects.create(answer_name='said that the United States is free (from Great Britain)',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What are two rights in the Declaration of Independence?',
                                            subject=subject,
@@ -100,6 +170,12 @@ class Command(BaseCommand):
                                        question=question)
         answer = Answer.objects.create(answer_name='pursuit of happiness',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What is freedom of religion?',
                                            subject=subject,
@@ -107,6 +183,18 @@ class Command(BaseCommand):
                                            chapter=chapter_a)
         answer = Answer.objects.create(answer_name='You can practice any religion, or not practice a religion.',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What is the economic system in the United States?*',
                                            subject=subject,
@@ -116,6 +204,15 @@ class Command(BaseCommand):
                                        question=question)
         answer = Answer.objects.create(answer_name='market economy',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What is the “rule of law”?',
                                            subject=subject,
@@ -129,6 +226,9 @@ class Command(BaseCommand):
                                        question=question)
         answer = Answer.objects.create(answer_name='No one is above the law.',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         chapter_b = Chapter.objects.create(chapter_name='B: System of Government',
                                            part=part_1)
@@ -160,6 +260,15 @@ class Command(BaseCommand):
                                        question=question)
         answer = Answer.objects.create(answer_name='separation of powers',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(
             question_name='Who is in charge of the executive branch?',
@@ -168,6 +277,18 @@ class Command(BaseCommand):
             chapter=chapter_b)
         answer = Answer.objects.create(answer_name='the President',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='Who makes federal laws?',
                                            subject=subject,
@@ -179,6 +300,12 @@ class Command(BaseCommand):
                                        question=question)
         answer = Answer.objects.create(answer_name='(U.S. or national) legislature',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='What are the two parts of the U.S. Congress?*',
                                            subject=subject,
@@ -186,6 +313,18 @@ class Command(BaseCommand):
                                            chapter=chapter_b)
         answer = Answer.objects.create(answer_name='the Senate and House (of Representatives)',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='How many U.S. Senators are there?',
                                            subject=subject,
@@ -193,6 +332,18 @@ class Command(BaseCommand):
                                            chapter=chapter_b)
         answer = Answer.objects.create(answer_name='one hundred (100)',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='We elect a U.S. Senator for how many years?',
                                            subject=subject,
@@ -200,6 +351,18 @@ class Command(BaseCommand):
                                            chapter=chapter_b)
         answer = Answer.objects.create(answer_name='six (6)',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         question = Question.objects.create(question_name='Who is one of your state’s U.S. Senators now?*',
                                            subject=subject,
@@ -207,6 +370,118 @@ class Command(BaseCommand):
                                            chapter=chapter_b)
         answer = Answer.objects.create(answer_name='Answers will vary.',
                                        question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+
+        question = Question.objects.create(question_name='The House of Representatives has how many voting members?',
+                                           subject=subject,
+                                           part=part_1,
+                                           chapter=chapter_b)
+        answer = Answer.objects.create(answer_name='four hundred thirty-five (435)',
+                                       question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+
+        question = Question.objects.create(question_name='We elect a U.S. Representative for how many years?',
+                                           subject=subject,
+                                           part=part_1,
+                                           chapter=chapter_b)
+        answer = Answer.objects.create(answer_name='two (2)',
+                                       question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+
+        question = Question.objects.create(question_name='Name your U.S. Representative.',
+                                           subject=subject,
+                                           part=part_1,
+                                           chapter=chapter_b)
+        answer = Answer.objects.create(answer_name='Answers will vary.',
+                                       question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+
+        question = Question.objects.create(question_name='Who does a U.S. Senator represent?',
+                                           subject=subject,
+                                           part=part_1,
+                                           chapter=chapter_b)
+        answer = Answer.objects.create(answer_name='all people of the state',
+                                       question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+
+        question = Question.objects.create(
+            question_name='Why do some states have more Representatives than other states?',
+            subject=subject,
+            part=part_1,
+            chapter=chapter_b,
+            explanation='Some states have more representatives than other states because they have more people. We '
+                        'know how many people live in each state because of the census. Every ten years, the United '
+                        'States government counts the people of the United States in the census. The census results '
+                        'decide how many representatives come from each state. The state is divided into districts. '
+                        'Each district elects one representative. If the number of people in a state changes, '
+                        'the number of representatives might change.')
+        answer = Answer.objects.create(answer_name='(because of) the state’s population',
+                                       question=question)
+        answer = Answer.objects.create(answer_name='(because) they have more people',
+                                       question=question)
+        answer = Answer.objects.create(answer_name='(because) some states have more people',
+                                       question=question)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
+        answer = Answer.objects.create(answer_name='wrong answer',
+                                       question=question,
+                                       is_correct=False)
 
         chapter_c = Chapter.objects.create(chapter_name='C: Rights and Responsibilities',
                                            part=part_1)
