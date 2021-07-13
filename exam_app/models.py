@@ -21,8 +21,8 @@ class Attempt(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     student = models.ForeignKey(Student, default=1, on_delete=models.CASCADE)
     subject = models.ForeignKey(Subject, default=1, on_delete=models.CASCADE)
-    number_of_questions = models.PositiveIntegerField(default=20)
-    min_to_pass = models.PositiveIntegerField(default=18)
+    number_of_questions = models.PositiveIntegerField(default=4)
+    min_to_pass = models.PositiveIntegerField(default=3)
     # result maybe 0
     result = models.IntegerField(default=0)
 
@@ -33,7 +33,7 @@ class Attempt(models.Model):
         if not Exam.objects.filter(attempt=self).exists():
             questions = Question.objects.all()
 
-            for i in range(20):
+            for i in range(4):
                 random_question = random.choice(questions)
                 blank_answer = Answer.objects.filter(answer_name='wrong answer').first()
                 Exam.objects.create(attempt=self,
